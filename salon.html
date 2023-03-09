@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/style.css">
+<div class="container">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <strong>SIO CHAT</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox chat-view">
+                <div class="ibox-title" id='nom-salon'>
+                    Salon général
+                    <small id='last-msg' class="fa-pull-right fa-text-muted"></small> 
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-9 ">
+                            <div class="chat-discussion" id="messages">
+                            <!--
+                                <div class="chat-message left">
+                                    <img class="message-avatar" src="https://img2.freepng.fr/20180531/wxl/kisspng-avatar-computer-icons-logo-photographer-5b102d1e728c13.7251972015277867824692.jpg" alt="">
+                                    <div class="message">
+                                        <a class="message-author" href="#"> Michael Smith </a>
+                                        <span class="message-date"> Mon Jan 26 2015 - 18:39:23 </span>
+                                        <span class="message-content">
+    										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="chat-message right">
+                                    <img class="message-avatar" src="https://img2.freepng.fr/20180531/wxl/kisspng-avatar-computer-icons-logo-photographer-5b102d1e728c13.7251972015277867824692.jpg" alt="">
+                                    <div class="message">
+                                        <a class="message-author" href="#"> Karl Jordan </a>
+                                        <span class="message-date">  Fri Jan 25 2015 - 11:12:36 </span>
+                                        <span class="message-content">
+											Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.
+                                            </span>
+                                    </div>
+                                </div>
+                            -->
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chat-users">
+                                <div class="users-list" id="utilisateurs">
+                                    <!--
+                                    <div class="chat-user">
+                                        <img class="chat-avatar" src="https://img2.freepng.fr/20180531/wxl/kisspng-avatar-computer-icons-logo-photographer-5b102d1e728c13.7251972015277867824692.jpg" alt="">
+                                        <div class="chat-user-name">
+                                            <a href="#">Karl Jordan</a>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="form" action="">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <div class="chat-message-form">
+                                <div class="form-group">
+                                    <input id="input" class="form-control message-input" name="message" placeholder="Écrire votre message ici, et appuyer sur entrée pour envoyer" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 btn-group">
+                            <button id="button" class="btn btn-danger btn-block">
+                                <i class="bi bi-send-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="socket.io/socket.io.js"></script>
+<script src="client.js"></script>
